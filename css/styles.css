@@ -1,0 +1,327 @@
+body {
+
+}
+
+
+/* ########################################################## */
+/* Intro section */
+
+nav {
+  color: white;
+}
+
+.nav-item {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  white-space: nowrap;
+}
+
+#title {
+  background-color: #f9f8eb;
+  text-align: center;
+}
+
+ul {
+  width: 475px;
+}
+
+.container-intro {
+  padding: 5% 20% 3%;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.me-image {
+  width: 10%;
+}
+
+.intro-heading {
+  font-size: 5rem;
+  line-height: 1.5;
+  padding: 5%;
+}
+
+
+/* ########################################################## */
+/* Skills section */
+
+#skills {
+  background-color: #a7d7c5;
+  text-align: center;
+  position: relative;
+}
+
+.container-skills {
+  padding: 4% 20%;
+}
+
+.skills-heading {
+  padding-bottom: 4%;
+}
+
+.skill {
+  padding: 5% 0;
+}
+
+/* ########################################################## */
+/* Website portfolio*/
+
+#website-portfolio {
+  background-color: #74b49b;
+  text-align: center;
+}
+
+.website-img {
+  width: 1000px;
+  height: 600px;
+  margin-top: 3%;
+}
+
+.wp-heading {
+  padding-top: 4%;
+}
+
+.slide {
+  display: block;
+}
+
+.carousel-caption {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+/* ########################################################## */
+/* Projects */
+
+#projects {
+  background-color: #a7d7c5;
+  text-align: center;
+}
+
+.projects-heading {
+  padding-bottom: 4%;
+}
+
+.container-projects {
+  padding: 4% 20%;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.project-line {
+  border-top: 3px dotted #f9f8eb;
+  width: 50%;
+}
+
+.project-image {
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+
+.projects-p {
+  display: flex;
+  align-items: center;
+}
+
+/* ########################################################## */
+/* Awards */
+
+#awards {
+  background-color: #74b49b;
+  text-align: center;
+}
+
+.awards-heading {
+  padding-bottom: 4%;
+}
+
+.container-awards {
+  padding: 4% 20%;
+}
+
+.card-style {
+  background-color: #f9f8eb;
+}
+
+/* ########################################################## */
+/* Art Gallery */
+
+#art-gallery {
+  background-color: #f9f8eb;
+  text-align: center;
+}
+
+.ag-heading {
+  padding-bottom: 4%;
+}
+
+.container-ag {
+  padding: 4% 15%;
+}
+
+.artwork-caption {
+  font-weight: 100;
+  color: #B9B8B8;
+}
+
+.artwork {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.artwork:hover {
+  transform: scale(1.05);
+}
+
+/* Top image styling */
+
+.top-img-container {
+  margin-left: 8px;
+  margin-right: 8px;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.top-img-container:hover .img-content-hover {
+  display: block;
+}
+
+/* Other images styling  */
+
+.gallery-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.img-container {
+  margin-top: 8px;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.column img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+.img-container:hover .img-content-hover {
+  display: block;
+}
+
+.img-content-hover {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  display: none;
+  padding: 1rem;
+  background: white;
+  font-weight: 400;
+  margin-top: 1.25rem;
+  margin-left: -2rem;
+}
+
+.img-content {
+  display: none;
+}
+
+/* Making the 2 columns stack on eachother in mobile view */
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .artwork:hover {
+    transform: none;
+  }
+
+  .top-img-container:hover .img-content-hover {
+    display: none;
+  }
+
+  .img-container:hover .img-content-hover {
+    display: none;
+  }
+
+  .img-content {
+    display: block;
+    padding: 1rem 0;
+  }
+}
+
+/* ########################################################## */
+/* Contact Me */
+
+#contact {
+  background-color:  #f9f8eb;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.container-contact {
+  margin: 5% 0%;
+  border: 5px dotted #5c8d89;
+  padding: 5% 10%;
+}
+
+.contact-heading {
+  padding-bottom: 4%;
+}
+
+/* ########################################################## */
+/* Footer */
+
+footer {
+  text-align: center;
+}
+
+.footer-links {
+  padding-top: 2.5%;
+  padding-bottom: 20px;
+}
+
+.footer-link {
+  color: #11999E;
+  margin: 0 20px;
+}
+
+.footer-link:hover {
+  color:  #f9f8eb;
+  text-decoration: none;
+}
+
+.copyright {
+  color:  #f9f8eb;
+  font-size: 0.75rem;
+  padding: 20px 0;
+  margin-bottom: 0;
+}

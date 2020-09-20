@@ -1,0 +1,668 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ########################################################## */
+/* Intro section */
+/* animating letters 1 by 1 */
+#svg-title {
+  animation: fill 0.5s ease forwards 3s;
+  position: relative;
+  margin: 7%;
+}
+
+#svg-title path:nth-child(1) {
+  stroke-dasharray: 222.91195678710938px;
+  stroke-dashoffset: 222.91195678710938px;
+  animation: line-anim 2s ease forwards 0.1s;
+}
+
+#svg-title path:nth-child(2) {
+  stroke-dasharray: 91.71399688720703px;
+  stroke-dashoffset: 91.71399688720703px;
+  animation: line-anim 2s ease forwards 0.2s;
+}
+
+#svg-title path:nth-child(3) {
+  stroke-dasharray: 650.4169921875px;
+  stroke-dashoffset: 650.4169921875px;
+  animation: line-anim 2s ease forwards 0.3s;
+}
+
+#svg-title path:nth-child(4) {
+  stroke-dasharray: 506.4576721191406px;
+  stroke-dashoffset: 506.4576721191406px;
+  animation: line-anim 2s ease forwards 0.4s;
+}
+
+#svg-title path:nth-child(5) {
+  stroke-dasharray: 319.72607421875px;
+  stroke-dashoffset: 319.72607421875px;
+  animation: line-anim 2s ease forwards 0.5s;
+}
+
+#svg-title path:nth-child(6) {
+  stroke-dasharray: 480.3218688964844px;
+  stroke-dashoffset: 480.3218688964844px;
+  animation: line-anim 2s ease forwards 0.6s;
+}
+
+#svg-title path:nth-child(7) {
+  stroke-dasharray: 412.35247802734375px;
+  stroke-dashoffset: 412.35247802734375px;
+  animation: line-anim 2s ease forwards 0.7s;
+}
+
+#svg-title path:nth-child(8) {
+  stroke-dasharray: 234.1439971923828px;
+  stroke-dashoffset: 234.1439971923828px;
+  animation: line-anim 2s ease forwards 0.8s;
+}
+
+#svg-title path:nth-child(9) {
+  stroke-dasharray: 495.05560302734375px;
+  stroke-dashoffset: 495.05560302734375px;
+  animation: line-anim 2s ease forwards 0.9s;
+}
+
+#svg-title path:nth-child(10) {
+  stroke-dasharray: 445.61578369140625px;
+  stroke-dashoffset: 445.61578369140625px;
+  animation: line-anim 2s ease forwards 1s;
+}
+
+#svg-title path:nth-child(11) {
+  stroke-dasharray: 815.2294311523438px;
+  stroke-dashoffset: 815.2294311523438px;
+  animation: line-anim 2s ease forwards 1.1s;
+}
+
+#svg-title path:nth-child(12) {
+  stroke-dasharray: 411.569580078125px;
+  stroke-dashoffset: 411.569580078125px;
+  animation: line-anim 2s ease forwards 1.2s;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+
+  to {
+    fill: black;
+  }
+}
+
+.navbar-custom-style a {
+  color: black !important;
+}
+
+.nav-item {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  white-space: nowrap;
+}
+
+#title {
+  background-color: #f9f8eb;
+  text-align: center;
+  height: 100vh;
+}
+
+ul {
+  width: 675px;
+}
+
+.container-intro {
+  padding: 5% 20% 3%;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container-intro p {
+  line-height: 2;
+}
+
+.me-image {
+  width: 10%;
+}
+
+.intro-heading {
+  font-size: 5rem;
+  line-height: 1.5;
+  padding: 5%;
+}
+
+.intro-heading {
+  display: none;
+}
+
+@media (max-width: 1300px) {
+  #title {
+    height: auto;
+  }
+  .title-container {
+    display: none;
+  }
+  .intro-heading {
+    display: block;
+  }
+}
+
+/* ########################################################## */
+/* Skills section */
+#skills {
+  background-color: #a7d7c5;
+  text-align: center;
+  position: relative;
+}
+
+.container-skills {
+  padding: 4% 20%;
+}
+
+.skills-heading {
+  padding-bottom: 4%;
+}
+
+.skill {
+  padding: 5% 0;
+}
+
+/* ########################################################## */
+/* Website portfolio*/
+#website-portfolio {
+  background-color: #74b49b;
+  text-align: center;
+}
+
+.website-img {
+  width: 1000px;
+  height: 600px;
+  margin-top: 1.5%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@media (max-width: 1000px) {
+  .website-img {
+    width: 500px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .website-img {
+    width: 320px;
+    height: 220px;
+  }
+}
+
+.wp-heading {
+  padding: 4% 0 2%;
+}
+
+.wp-text {
+  margin: 0;
+}
+
+.slide {
+  display: block;
+}
+
+.carousel-image-caption {
+  display: block;
+}
+
+.website-caption {
+  margin: 10px 0;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  filter: invert(100%);
+}
+
+/* ########################################################## */
+/* Projects */
+/* Several classes of this section are re-used in the education section as well*/
+#projects {
+  background-color: #a7d7c5;
+  text-align: center;
+}
+
+.container-projects {
+  padding: 4% 10%;
+}
+
+.projects-heading {
+  padding-bottom: 4%;
+}
+
+.project-line {
+  border-top: 3px dotted #f9f8eb;
+  width: 50%;
+}
+
+.project-image {
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+}
+
+.project-info {
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .project-info {
+    text-align: center;
+    line-height: 1.5;
+  }
+}
+
+.project-tag {
+  margin: 5px 10px 0;
+  padding: 2px 7px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+}
+
+/* colors from https://flatuicolors.com/palette/se */
+.html-tag {
+  background-color: #ffc048;
+}
+
+.css-tag {
+  background-color: #0fbcf9;
+  color: white;
+}
+
+.bootstrap-tag {
+  background-color: #3c40c6;
+  color: white;
+}
+
+.js-tag {
+  background-color: #ffd32a;
+}
+
+.react-tag {
+  background-color: #34e7e4;
+}
+
+.node-tag {
+  background-color: #485460;
+  color: white;
+}
+
+.python-tag {
+  background-color: #05c46b;
+  color: white;
+}
+
+.java-tag {
+  background-color: #ffa801
+}
+
+.c-tag {
+  background-color: #575fcf;
+  color: white;
+}
+
+.bash-tag {
+  background-color: #1e272e;
+  color: white;
+}
+
+.clojure-tag {
+  background-color: #00d8d6;
+}
+
+.ocaml-tag {
+  background-color: #ffdd59;
+}
+
+.assembly-tag {
+  background-color: #808e9b;
+  color: white;
+}
+
+.express-tag {
+  background-color: #0be881;
+}
+
+.other-tag {
+  background-color: #d2dae2;
+}
+
+/* ########################################################## */
+/* Education */
+#education {
+  background-color: #74b49b;
+  text-align: center;
+}
+
+.education-title {
+  padding-bottom: 4%;
+}
+
+.container-education {
+  padding: 4% 10%;
+}
+
+.education-subtitle {
+  padding: 2% 0;
+}
+
+#education p {
+  margin: 1rem 0;
+}
+
+#education span {
+}
+
+.cimf-logo-img {
+  object-fit: cover;
+  object-position: 0 0;
+}
+
+/* ########################################################## */
+/* Awards */
+#awards {
+  background-color: #a7d7c5;
+}
+
+#awards h1 {
+  text-align: center;
+}
+
+.awards-heading {
+  padding-bottom: 4%;
+}
+
+.container-awards {
+  padding: 4% 20%;
+}
+
+.award {
+  display: flex;
+  justify-content: center;
+}
+
+.card-style {
+  background-color: #f9f8eb;
+  width: 330px;
+}
+
+.award-image {
+  width: 330px;
+  height: 275px;
+  object-fit: cover;
+}
+
+.award-date {
+  color: #AFAFAF;
+  font-size: 0.8rem;
+}
+
+/* ########################################################## */
+/* Art Gallery */
+#art-gallery {
+  background-color: #f9f8eb;
+  text-align: center;
+}
+
+.ag-heading {
+  padding-bottom: 2%;
+}
+
+.container-ag {
+  padding: 4% 15%;
+}
+
+.container-ag p {
+  line-height: 2;
+  padding-bottom: 2%;
+}
+
+.artwork-caption {
+  font-weight: 100;
+  color: #B9B8B8;
+}
+
+.artwork {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.artwork:hover {
+  transform: scale(1.05);
+}
+
+/* Top image styling */
+.top-img-container {
+  margin-left: 8px;
+  margin-right: 8px;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.top-img-container:hover .img-content-hover {
+  display: block;
+}
+
+/* Other images styling  */
+.gallery-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.img-container {
+  margin-top: 8px;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.column img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+.img-container:hover .img-content-hover {
+  display: block;
+}
+
+.img-content-hover {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  display: none;
+  padding: 1rem;
+  background: white;
+  font-weight: 400;
+  margin-top: 1.25rem;
+  margin-left: -2rem;
+}
+
+.img-content {
+  display: none;
+}
+
+.art-gallery-back-button {
+  width: 100%;
+  padding: 0 15% 4%;
+  text-align: left;
+}
+
+.art-gallery-back-button button {
+  margin-left: 8px;
+}
+
+.art-gallery-back-button button a {
+  text-decoration: none;
+}
+
+/* Making the 2 columns stack on eachother in mobile view */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .artwork:hover {
+    transform: none;
+  }
+
+  .top-img-container:hover .img-content-hover {
+    display: none;
+  }
+
+  .img-container:hover .img-content-hover {
+    display: none;
+  }
+
+  .img-content {
+    display: block;
+    padding: 1rem 0;
+  }
+}
+
+/* ########################################################## */
+/* Contact Me */
+#contact {
+  background-color: #f9f8eb;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+#contact a {
+  text-decoration: none;
+}
+
+.container-contact {
+  margin: 5% 0%;
+  border: 5px dotted #5c8d89;
+  padding: 5% 10%;
+}
+
+.contact-heading {
+  padding-bottom: 4%;
+}
+
+/* ########################################################## */
+/* Footer */
+footer {
+  text-align: center;
+}
+
+.footer-links {
+  padding-top: 2.5%;
+  padding-bottom: 20px;
+}
+
+.footer-link {
+  color: #11999E;
+  margin: 0 20px;
+}
+
+.footer-link:hover {
+  color: #f9f8eb;
+  text-decoration: none;
+}
+
+.copyright {
+  color: #f9f8eb;
+  font-size: 0.75rem;
+  padding: 20px 0;
+  margin-bottom: 0;
+}
+
+/* ########################################################## */
+/* Contact Page*/
+#contact-page {
+  text-align: center;
+}
+
+#contact-page .contact-display-pc, #contact-page .contact-display-mobile {
+  max-width: 700px;
+  border: 5px dotted #5c8d89;
+  padding: 10px;
+}
+
+#contact-page h1 {
+  font-size: 5rem;
+  line-height: 1.5;
+  padding: 5%;
+}
+
+#contact-page p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+#contact-page a {
+  text-decoration: none;
+}
+
+.contact-info {
+  text-align: left;
+}
+
+.contact-image {
+  width: 200px;
+}
+
+.contact-page-back-button-container {
+  height: 0;
+}
+
+.contact-page-back-button {
+  position: relative;
+  top: 60px;
+}
+
+.contact-display-mobile {
+  display: none;
+}
+
+@media (max-width: 770px) {
+  .contact-display-mobile {
+    display: block;
+  }
+
+  .contact-display-pc {
+    display: none;
+  }
+
+  .contact-page-back-button {
+    position: relative;
+    top: 60px;
+  }
+}
