@@ -24,7 +24,7 @@
     <!-- Navbar -->
 
     <nav class="navbar navbar-expand-md navbar-light navbar-custom-style">
-      <a class="navbar-brand" href="/">Home</a>
+      <!-- <a class="navbar-brand" href="/">Home</a> -->
 
       <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
         <span class="navbar-toggler-icon"></span>
@@ -35,22 +35,19 @@
       <div class="collapse navbar-collapse justify-content-stretch" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link custom-nav-link" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#website-portfolio">Website Portfolio</a>
+            <a class="nav-link custom-nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link custom-nav-link" href="#awards">Awards</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#awards">Awards</a>
+            <a class="nav-link custom-nav-link" href="/art">Art</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/art">Art</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/contact">Contact</a>
+            <a class="nav-link custom-nav-link" href="/contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -95,9 +92,8 @@
     <h1 class="intro-heading">I'm Stanley Wu</h1>
     <img class="me-image" src=images/stanley-circle.png alt="stanley" />
     <div class="row container-intro">
-      <p>I am a computer science student studying at McGill. I am also currently looking for an internship/work for next summer.<br />
-        In my free time, I enjoy drawing, swimming, biking, running, gaming, and pc building <i class="fas fa-desktop"></i>. 
-        Favorite quote when I'm debugging: "When you have exhausted all possibilities, remember this - you haven't" (Thomas Edison).
+      <p>I am a computer science student at McGill 🎓.<br />
+        In my free time, I enjoy reading 📚, drawing 🎨, swimming 🏊‍♂️, biking 🚴, gaming 🎮, and pc building 🔧🖥</i>.
       </p>
     </div>
 
@@ -155,7 +151,7 @@
         <div class="col-lg-3 col-md-4 col-sm-4 col-6">
           <div class="skill">
             <img src="https://img.icons8.com/color/48/000000/bootstrap.png" />
-            <p>Boostrap</p>
+            <p>Bootstrap</p>
           </div>
         </div>
         <div class="col-lg-3 col-md-4 col-sm-4 col-6">
@@ -216,7 +212,7 @@
 
     <h1 class="wp-heading">My Website Portfolio</h1>
     <p class="wp-text">
-      I played around with wordpress and helped build some websites for people I know. 
+      I played around with wordpress and helped build some websites for people I know.
     </p> -->
 
     <!-- Carousel -->
@@ -360,17 +356,51 @@
           <h5 class="education-date">2019-Present</h5>
           <h5 class="education-subtitle">Relevant Coursework:</h5>
           <!-- list of relevant coursework -->
+
           <div>
             <p>
               <b>COMP 445:</b> Computational Linguistics.
                <!-- An intersection between the theory of computation and information theory. -->
-               Going over different models of computation in increasing power that attempt to describe natural languages.
+               Introduced different models of computation in increasing power that attempt to describe natural languages.
             </p>
             <span class="project-tag clojure-tag">Clojure</span>
           </div>
           <div>
+
+          <div>
             <p>
-              <b>COMP 302:</b> Programming Languages and Paradigms. Currently building a toy language in OCaml.
+              <b>COMP 424:</b> Artificial Intelligence.
+              Went over search algorithms, logical representations, probabilistic representations, and utility theory.
+            </p>
+            <span class="project-tag java-tag">Java</span>
+          </div>
+
+          <div>
+            <p>
+              <b>COMP 360:</b> Algorithm Design.
+              Covered network flows, linear programming (notably the simplex algorithm), and intractability.
+            </p>
+            <span class="project-tag other-tag">Math</span>
+          </div>
+
+          <div>
+            <p>
+              <b>COMP 310:</b> Operating Systems.
+              Learned about processes, threads, process management, deadlocks, memory management, virtual memory, and file systems.
+            </p>
+            <span class="project-tag c-tag">C</span>
+          </div>
+
+          <div>
+            <p>
+              <b>COMP 303:</b> Software Design.
+              Introduced principles of good design, common design patterns (ex: Command, Strategy, Visitor, etc...) and anti-patterns (Message Chain, God Class, etc...).
+            </p>
+            <span class="project-tag java-tag">Java</span>
+          </div>
+
+            <p>
+              <b>COMP 302:</b> Programming Languages and Paradigms. Built a toy language in OCaml for the final project.
             </p>
             <span class="project-tag ocaml-tag">OCaml</span>
           </div>
@@ -382,7 +412,7 @@
           </div>
           <div>
             <p>
-              <b>COMP 251:</b> Continuation of COMP250 with more depth.
+              <b>COMP 251:</b> Continuation of COMP250 with more depth. Some covered topics are dynamic programming, greedy algorithms, shortest path, and matching.
             </p>
             <span class="project-tag java-tag">Java</span>
           </div>
@@ -479,13 +509,24 @@
 
       <!-- <div class="award col-lg-4 col-md-6">
           <div class="card card-style">
-            <img class="card-img-top" src="..." alt="Future medal">
+            <img class="card-img-top" src="..." alt="Award">
             <div class="card-body">
               <h5 class="card-title">Future award</h5>
               <p class="card-text">Coming Soon!</p>
             </div>
           </div>
         </div> -->
+
+
+        <!-- <div class="award col-lg-4 col-md-6">
+            <div class="card card-style">
+              <img class="card-img-top" src="..." alt="Future medal">
+              <div class="card-body">
+                <h5 class="card-title">Future award</h5>
+                <p class="card-text">Coming Soon!</p>
+              </div>
+            </div>
+          </div> -->
 
 
 
@@ -514,7 +555,7 @@
   </div>
   <a href="https://icons8.com/icon/s0oMA2u8paUt/console">Console icon by Icons8</a>
   <p class="copyright">
-    ©2020 Stanley Wu
+    ©2021 Stanley Wu
   </p>
 </footer>
 

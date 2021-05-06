@@ -116,7 +116,13 @@ body {
 }
 
 ul {
-  width: 675px;
+  width: 450px;
+  height: 25px;
+}
+
+.custom-nav-link:hover {
+  color: #74b49b !important;
+  border-bottom: 3px solid #74b49b;
 }
 
 .container-intro {
