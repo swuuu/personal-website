@@ -1,3 +1,15 @@
+// scrolling smoothly when clicking the href in the home page
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+
+
 
 // art section mouse hover information displaying
 const imgContent = document.querySelectorAll(".img-content-hover");
@@ -12,14 +24,7 @@ function showContent(event) {
 
 document.addEventListener("mousemove", showContent);
 
-// home page section title svg: printing the length of each letter to animate it in styles.css
-// const paths = document.querySelectorAll("#svg-title path");
-//
-// for (let i = 0; i < paths.length; i++) {
-//   console.log(`Letter ${i} is ${paths[i].getTotalLength()}`);
-// }
-
-// education section: translation between french and english
+// translation for the home page
 
 function translate() {
   if (document.getElementById("translation").checked) {

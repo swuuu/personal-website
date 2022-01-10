@@ -183,6 +183,10 @@ ul {
   padding: 5% 0;
 }
 
+.skill-text {
+  padding: 0 15% 2%
+}
+
 /* ########################################################## */
 /* Website portfolio*/
 #website-portfolio {
@@ -322,6 +326,11 @@ ul {
 }
 
 .c-tag {
+  background-color: #575fcf;
+  color: white;
+}
+
+.cpp-tag {
   background-color: #575fcf;
   color: white;
 }
